@@ -14,5 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "kmp-template"
-include(":library")
+rootProject.name = "bip"
+
+include(":bip39")
+include(":crypto")
