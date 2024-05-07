@@ -1,6 +1,6 @@
 # kotlin-bip
 
-[![GitHub release](https://img.shields.io/badge/release-v0.0.1-blue.svg)](https://github.com/KryptonReborn/kotlin-bip/releases/tag/v0.0.1) [![Kotlin Version](https://img.shields.io/badge/Kotlin-1.9.23-B125EA?logo=kotlin)](https://kotlinlang.org)
+[![GitHub release](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/KryptonReborn/kotlin-bip/releases/tag/v0.1.0) [![Kotlin Version](https://img.shields.io/badge/Kotlin-1.9.23-B125EA?logo=kotlin)](https://kotlinlang.org)
 [![Build Status](https://github.com/saschpe/kase64/workflows/Main/badge.svg)](https://github.com/KryptonReborn/kotlin-bip/actions)
 [![License](http://img.shields.io/:License-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
@@ -188,6 +188,11 @@ val mnemonic = Mnemonic(WordCount.COUNT_24, languageCode = Locale.ENGLISH.langua
 ```
 
 ## Acknowledgements
-[bip39](https://github.com/KryptonReborn/kotlin-bip/tree/main/bip39) is inspired by [kotlin-bip39](https://github.com/Electric-Coin-Company/kotlin-bip39/tree/main/bip39-lib/src/commonMain/kotlin/cash/z/ecc/android/bip39) by [Electric Coin Company](https://github.com/Electric-Coin-Company)
 
-[bip44](https://github.com/KryptonReborn/kotlin-bip/tree/main/bip44) is inspired by [hdwallet](https://github.com/FigureTechnologies/hdwallet/tree/main/bip44) by [Figure Technologies Inc.](https://github.com/FigureTechnologies)
+[bip39](https://github.com/KryptonReborn/kotlin-bip/tree/main/bip39) is inspired
+by [kotlin-bip39](https://github.com/Electric-Coin-Company/kotlin-bip39/tree/main/bip39-lib/src/commonMain/kotlin/cash/z/ecc/android/bip39)
+by [Electric Coin Company](https://github.com/Electric-Coin-Company)
+
+[bip44](https://github.com/KryptonReborn/kotlin-bip/tree/main/bip44) is inspired
+by [hdwallet](https://github.com/FigureTechnologies/hdwallet/tree/main/bip44)
+by [Figure Technologies Inc.](https://github.com/FigureTechnologies)
