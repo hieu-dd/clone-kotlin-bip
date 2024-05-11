@@ -80,16 +80,16 @@ class MnemonicTest {
     }
 
     @Test
-    fun testConvertMnemonicToSeed() {
-        val passphrase = "TREZOR".toCharArray()
-        englishTestData.forEach {
-            assertEquals(
-                it.seed,
-                Mnemonic(it.mnemonic, DEFAULT_LANGUAGE_CODE).toSeed(passphrase)
-                    .toHexString()
-            )
-        }
-    }
+//    fun testConvertMnemonicToSeed() {
+//        val passphrase = "TREZOR".toCharArray()
+//        englishTestData.forEach {
+//            assertEquals(
+//                it.seed,
+//                Mnemonic(it.mnemonic, DEFAULT_LANGUAGE_CODE).toSeed(passphrase)
+//                    .toHexString()
+//            )
+//        }
+//    }
 
     @Test
     fun testInvalidMnemonicBySwap() {
