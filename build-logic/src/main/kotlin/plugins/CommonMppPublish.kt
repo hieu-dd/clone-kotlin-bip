@@ -30,8 +30,10 @@ class CommonMppPublish : Plugin<Project> {
                         maven {
                             url = uri(publishExtension.url)
                             credentials {
-                                username = "hieu-dd"
-                                password = "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"
+                                username = findProperty("gpr.user") as String?
+                                    ?: System.getenv("USERNAME_GITHUB")
+                                password = findProperty("gpr.token") as String?
+                                    ?: System.getenv("TOKEN_GITHUB")
                             }
                         }
                     }
