@@ -79,7 +79,7 @@ class MnemonicTest {
         }
     }
 
-    @Test
+//    @Test
 //    fun testConvertMnemonicToSeed() {
 //        val passphrase = "TREZOR".toCharArray()
 //        englishTestData.forEach {
