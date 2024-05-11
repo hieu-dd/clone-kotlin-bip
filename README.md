@@ -1,7 +1,7 @@
 # kotlin-bip
 
-[![GitHub release](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/KryptonReborn/kotlin-bip/releases/tag/v0.0.1) [![Kotlin Version](https://img.shields.io/badge/Kotlin-1.9.23-B125EA?logo=kotlin)](https://kotlinlang.org)
-[![Build Status](https://github.com/saschpe/kase64/workflows/Main/badge.svg)](https://github.com/KryptonReborn/kotlin-bip/actions)
+[![GitHub release](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/hieu-dd/kotlin-bip/releases/tag/v0.0.1) [![Kotlin Version](https://img.shields.io/badge/Kotlin-1.9.23-B125EA?logo=kotlin)](https://kotlinlang.org)
+[![Build Status](https://github.com/saschpe/kase64/workflows/Main/badge.svg)](https://github.com/hieu-dd/kotlin-bip/actions)
 [![License](http://img.shields.io/:License-Apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ![badge-android](http://img.shields.io/badge/Platform-Android-brightgreen.svg?logo=android)
@@ -33,7 +33,7 @@ Add the following repository to your settings.gradle.kts file
 ```kotlin
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/KryptonReborn/kotlin-bip")
+        url = uri("https://maven.pkg.github.com/hieu-dd/kotlin-bip")
         credentials {
             username = "user name"
             password = "personal access token"
@@ -46,7 +46,7 @@ Add the following dependency to your build.gradle.kts file
 
 ```build.gradle.kts
 dependencies {
-    implementation("dev.kryptonreborn.bip:[artifact]:[version]")
+    implementation("dev.hieu-dd.bip:[artifact]:[version]")
 }
 ```
 
@@ -60,7 +60,7 @@ CharArray via `String(charArray)` or `String(charArray).split(' ')`.
 * Create new 24-word mnemonic phrase
 
 ```kotlin
-import dev.kryptonreborn.bip.bip39.Mnemonic
+import dev.hieu-dd.bip.bip39.Mnemonic
 
 val mnemonic: Mnemonic = Mnemonic(WordCount.COUNT_24)
 
@@ -188,6 +188,6 @@ val mnemonic = Mnemonic(WordCount.COUNT_24, languageCode = Locale.ENGLISH.langua
 ```
 
 ## Acknowledgements
-[bip39](https://github.com/KryptonReborn/kotlin-bip/tree/main/bip39) is inspired by [kotlin-bip39](https://github.com/Electric-Coin-Company/kotlin-bip39/tree/main/bip39-lib/src/commonMain/kotlin/cash/z/ecc/android/bip39) by [Electric Coin Company](https://github.com/Electric-Coin-Company)
+[bip39](https://github.com/hieu-dd/kotlin-bip/tree/main/bip39) is inspired by [kotlin-bip39](https://github.com/Electric-Coin-Company/kotlin-bip39/tree/main/bip39-lib/src/commonMain/kotlin/cash/z/ecc/android/bip39) by [Electric Coin Company](https://github.com/Electric-Coin-Company)
 
-[bip44](https://github.com/KryptonReborn/kotlin-bip/tree/main/bip44) is inspired by [hdwallet](https://github.com/FigureTechnologies/hdwallet/tree/main/bip44) by [Figure Technologies Inc.](https://github.com/FigureTechnologies)
+[bip44](https://github.com/hieu-dd/kotlin-bip/tree/main/bip44) is inspired by [hdwallet](https://github.com/FigureTechnologies/hdwallet/tree/main/bip44) by [Figure Technologies Inc.](https://github.com/FigureTechnologies)
