@@ -8,7 +8,7 @@ plugins {
 }
 
 publishConfig {
-    url = "https://maven.pkg.github.com/hieu-dd/kotlin-bip"
+    url = "https://maven.pkg.github.com/hieu-dd/clone-kotlin-bip"
     groupId = "dev.kryptonreborn.bip"
     artifactId = "bip44"
 }

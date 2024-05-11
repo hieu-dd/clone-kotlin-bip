@@ -33,7 +33,7 @@ Add the following repository to your settings.gradle.kts file
 ```kotlin
 repositories {
     maven {
-        url = uri("https://maven.pkg.github.com/hieu-dd/kotlin-bip")
+        url = uri("https://maven.pkg.github.com/hieu-dd/clone-kotlin-bip")
         credentials {
             username = "user name"
             password = "personal access token"
