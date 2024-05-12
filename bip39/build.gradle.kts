@@ -8,12 +8,12 @@ plugins {
 }
 
 publishConfig {
-    url = "https://maven.pkg.github.com/KryptonReborn/kotlin-bip"
+    url = "https://maven.pkg.github.com/hieu-dd/clone-kotlin-bip"
     groupId = "dev.kryptonreborn.bip"
     artifactId = "bip39"
 }
 
-version = "0.0.1"
+version = "0.1.1"
 
 android {
     namespace = "dev.kryptonreborn.bip.bip39"
