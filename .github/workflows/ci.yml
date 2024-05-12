@@ -73,7 +73,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Publish package
-        run: ./gradlew publish
+        run: ./gradlew publish --parallel
 
   create-release:
     runs-on: ubuntu-latest
