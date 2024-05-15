@@ -13,7 +13,7 @@ publishConfig {
     artifactId = "bip39"
 }
 
-version = "0.1.3"
+version = "0.1.4"
 
 android {
     namespace = "dev.kryptonreborn.bip.bip39"
