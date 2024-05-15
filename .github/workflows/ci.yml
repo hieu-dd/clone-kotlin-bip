@@ -58,6 +58,9 @@ jobs:
       contents: read
       packages: write
     needs: build-and-test
+    strategy:
+      matrix:
+        module: [ bip39, bip44, crypto ]
     steps:
       - uses: actions/checkout@v4
 
