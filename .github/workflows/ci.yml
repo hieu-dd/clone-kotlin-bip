@@ -45,12 +45,21 @@ jobs:
 
       - name: Build and Test
         run: ./gradlew build --build-cache --gradle-user-home ~/.gradle
-#      - name: Archive artifacts
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: build-artifacts
-#          path: library/build/libs/
-
+      - name: Archive artifacts bip39
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: bip39/build/libs/
+      - name: Archive artifacts bip44
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: bip44/build/libs/
+      - name: Archive artifacts crypto
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: crypto/build/libs/
   publish:
     name: Publish Package
     runs-on: macos-latest
@@ -79,11 +88,21 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-#      - name: Download build artifacts
-#        uses: actions/download-artifact@v2
-#        with:
-#          name: build-artifacts
-#          path:  library/build/libs/
+      - name: Download build artifacts bip39
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path:  bip39/build/libs/
+      - name: Download build artifacts bip44
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: bip44/build/libs/
+      - name: Download build artifacts crypto
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: crypto/build/libs/
 
       - name: Publish package
         run: ./gradlew publish
